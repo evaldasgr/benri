@@ -162,7 +162,7 @@ def benridict_process(phrase, editor):
 def benridict_create_lambda(editor):
     def launch(editor):
         cfg = aqt.mw.addonManager.getConfig(__name__)
-        lookup = cfg["fields"]["expression"]
+        lookup = editor.note[cfg["fields"]["expression"]]
         if lookup == "" or aqt.utils.KeyboardModifiersPressed().shift:
             aqt.mw.benridict_dialog = PhraseEntryDialog(editor, lookup)
             aqt.mw.benridict_dialog.show()
