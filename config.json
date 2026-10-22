@@ -1,0 +1,32 @@
+{
+    "benridict": {
+        "enabled": true,
+        "edict_path": "/usr/share/kiten/edict"
+    },
+    "benritalk": {
+        "enabled": true,
+        "method": "open_jtalk",
+        "voicevox_url": "http://127.0.0.1:50021",
+        "voicevox_speaker": "2",
+        "open_jtalk_path": "open_jtalk",
+        "open_jtalk_dic_path": "/usr/share/open-jtalk/dic",
+        "open_jtalk_voice_path": "/usr/share/open-jtalk/voices/nitech_jp_atr503_m001.htsvoice"
+    },
+    "benriocr": {
+        "enabled": true,
+        "url": "http://127.0.0.1:2177"
+    },
+    "benriclear": {
+        "enabled": true,
+        "fields": ["Expression", "Meaning", "Audio", "Image", "Pronunciation"]
+    },
+    "benripaste": {
+        "enabled": true
+    },
+    "fields": {
+        "expression": "Expression",
+        "meaning": "Meaning",
+        "audio": "Audio"
+    },
+    "ffmpeg_path": "ffmpeg"
+}
