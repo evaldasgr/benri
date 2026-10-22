@@ -114,7 +114,7 @@ def benridict_process(phrase, editor):
         return
 
     cfg = aqt.mw.addonManager.getConfig(__name__)
-    with open(os.path.join(os.path.dirname(__file__), cfg["benridict"]["edict_path"]), "r", encoding="euc-jp") as edict_file:
+    with open(cfg["benridict"]["edict_path"], "r", encoding="euc-jp") as edict_file:
         for line in edict_file:
             # Priorities are: 0(exact+priority), 1(exact), 2(priority), 3
             priority = 0
